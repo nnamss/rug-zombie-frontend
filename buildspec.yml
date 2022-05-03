@@ -10,7 +10,7 @@ phases:
       - aws sts get-caller-identity
       - echo Logging in to Amazon ECR...
       - echo $DOCKERHUB_PASSWORD | docker login --username $DOCKERHUB_USERNAME --password-stdin
-
+      - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID) | awk -F":" '{print $2}')
   build:
     commands:
       - echo Build started on `date`
