@@ -9,6 +9,7 @@ phases:
 #      - unzip awscliv2.zip
 #      - sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
       - aws --version
+      - ls -l /root/.pyenv/shims/aws
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
   build:
