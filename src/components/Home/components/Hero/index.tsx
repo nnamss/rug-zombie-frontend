@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ tvl, history }) => {
   return (
     <HeroContainer>
       <HeroContent>
-        <TitleTextBox>Resurrect Your Dead Tokens</TitleTextBox>
+        <TitleTextBox>Resurrect Your Dead Tokens?</TitleTextBox>
         <SubTextBox>
           Turn your worthless tokens into assets. RugZombie is introducing the next generation of NFT utility, with
           GameFi, E-Commerce and metaverse features.
