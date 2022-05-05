@@ -25,3 +25,4 @@ phases:
       - cat Dockerrun.aws.json
 artifacts:
   files: Dockerrun.aws.json
+
